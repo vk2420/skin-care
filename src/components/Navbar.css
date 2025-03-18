@@ -1,0 +1,54 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and login button */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff7e5f; /* Navbar background color */
+    color: white;
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position it at the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center; /* Center align the links */
+    flex-grow: 1; /* Allow the links to take up available space */
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px; /* Space between links */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #feb47b; /* Change color on hover */
+}
+
+.navbar-login {
+    margin-left: auto; /* Push the login button to the right */
+}
+
+.login-button {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: white;
+    color: #ff7e5f; /* Change text color on hover */
+}

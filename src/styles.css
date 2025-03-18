@@ -1,0 +1,95 @@
+/* src/styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.app {
+    text-align: center;
+    color: #333; /* Darker text for better contrast */
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 500px; /* Limit the width of the form */
+    margin: 20px; /* Add margin for spacing */
+    height: 450px;
+}
+
+.input-group {
+    margin: 15px 0;
+}
+
+.input-group label {
+    font-weight: bold; /* Bold labels for better visibility */
+}
+
+input, select {
+    width: 100%; /* Full width for inputs */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px; /* Space between label and input */
+    transition: border-color 0.3s; /* Smooth transition for focus */
+}
+
+input:focus, select:focus {
+    border-color: #ff7e5f; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    background-color: #ff7e5f; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #feb47b; /* Change button color on hover */
+}
+
+.recommendation-card {
+    width: 95%; /* Increase the width of the card */
+    margin: 20px auto; /* Center the card horizontally */
+    padding: 20px; /* Increase padding for better spacing */
+    background-color: #f0f0f0; /* Optional: change background color for better visibility */
+    border-radius: 8px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: add shadow for better depth */
+    height: 300px;
+}
+
+.recommendation-card h2 {
+    margin: 0 0 10px; /* Space below the heading */
+    color: #333; /* Darker color for heading */
+}
+
+.recommendation-text {
+    white-space: pre-wrap;
+    text-align: left;
+    margin: 10px 0;
+    line-height: 1.5;
+    font-size: 16px; /* Adjust font size if necessary */
+    padding: 5px;
+}
+
+pre {
+    display: block;
+    font-family: monospace;
+    unicode-bidi: isolate;
+    white-space: pre;
+    margin: 1em 0px;
+    text-align: left; /* Align text to the left */
+}
